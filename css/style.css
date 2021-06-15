@@ -2,6 +2,7 @@
   --title-color: #cdcdcd;
   --title-gray: #A5A5A1;
   --blue-elements: #045D8A;
+  --blue-light: #4F95FF;
   --red-main: #C7261C;
 }
 /* roboto-slab-regular - latin_cyrillic */
@@ -121,6 +122,8 @@ img {
   /* width: 100%; */
 }
 
+/* ------------ menu ------------- */
+
 .menu__list {
   position: absolute;
   display: flex;
@@ -142,6 +145,7 @@ img {
 .menu__item-phones img {
   position: relative;
   top: -1vw;
+  width: 2vw;
 }
 
 .menu-phone:not(:last-child) {
@@ -149,9 +153,47 @@ img {
 }
 
 .menu-link {
+  cursor: pointer;
   color: var(--title-gray);
   font-size: 1.3vw;
+  transition: color 0.3s ease-in-out, filter 0.3s ease-in-out ;
 }
+
+.menu-link:hover {
+  color: var(--blue-light);
+  filter: drop-shadow(0 0 15px var(--blue-light));
+}
+
+.menu-link:active {
+  color: var(--red-main);
+  filter: drop-shadow(0 0 15px var(--red-main));
+}
+
+.sub-menu__list {
+  position: absolute;
+}
+
+.sub-menu__item {
+  margin-top: 1vw;
+}
+
+.sub-menu__item .sub-menu-link{
+  font-size: 1.3vw;
+  color: var(--blue-light);
+  transition: color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.sub-menu__item .sub-menu-link:hover {
+  color: var(--title-color);
+  filter: drop-shadow(0 0 15px var(--title-color));
+}
+
+.sub-menu__item .sub-menu-link:active {
+  color: var(--red-main);
+  filter: drop-shadow(0 0 15px var(--red-main));
+}
+
+/* ------------ main ------------- */
 
 .main-page__wrapper {
   position: absolute;
@@ -295,6 +337,16 @@ img {
 
 .social__block .menu-link:not(:last-child) {
   margin-right: 1.7vw;
+}
+
+.social__icon {
+  filter: brightness(1);
+  transition: filter 0.3s ease-in-out;
+}
+
+.social__icon:hover,
+.social__icon:active  {
+  filter: brightness(1.7);
 }
 
 /* .social__block .menu-link img {
