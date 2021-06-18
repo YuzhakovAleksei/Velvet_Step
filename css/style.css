@@ -620,7 +620,7 @@ img {
 
   .swiper-button-prev,
   .swiper-button-next {
-    top: 96%;
+    top: 93%;
     margin-left: 4vw;
     margin-right: 4vw;
 
@@ -634,11 +634,11 @@ img {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 67vw;
-    bottom: -67vw;
+    height: 80vw;
+    bottom: -80vw;
     left: 0;
     z-index: 5;
-    padding: 6vw 0 6vw 0;
+    padding: 11vw 0 11vw 0;
     background-color: black;
   }
 
