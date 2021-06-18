@@ -4,6 +4,7 @@
   --blue-elements: #045D8A;
   --blue-light: #4F95FF;
   --red-main: #C7261C;
+  --swiper-theme-color: var(--blue-light);
 }
 /* roboto-slab-regular - latin_cyrillic */
 @font-face {
@@ -118,7 +119,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 13;
   /* width: 100%; */
 }
 
@@ -181,6 +182,10 @@ img {
   visibility: visible;
   pointer-events: none;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slider__wrapper {
+  display: none;
 }
 
 .type-item:hover .sub-menu__list {
@@ -339,6 +344,10 @@ img {
   line-height: 2.5vw;
 }
 
+.footer-phones {
+  display: none;
+}
+
 .social__block {
   display: flex;
   justify-content: flex-start;
@@ -387,7 +396,7 @@ img {
     align-items: center;
     width: 100%;
     height: fit-content;
-    padding: 1vw 3vw 1vw 3vw;
+    padding: 8px 30px 8px 30px;
     background-color: var(--blue-elements);
   }
 
@@ -399,6 +408,29 @@ img {
   }
 
   .menu__list {
+    display: none;
+  }
+
+  .logo__block {
+    position: absolute;
+    top: 25vh;
+    left: 19vw;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo__link{
+    width: 36vw;
+  }
+
+  .logo__title {
+    padding-left: 0;
+    padding-top: 3vw;
+  }
+
+  .column-block {
     display: none;
   }
 
@@ -417,9 +449,10 @@ img {
   .burger::after {
     left: 0;
     position: absolute;
+    /* transform-origin: center; */
     height: 5px;
-    width:32px;
-    transition: transform 0.5s ease-in-out 0s;
+    width: 35px;
+    transition: top 0.5s ease-in-out, bottom 0.5s ease-in-out, transform 0.5s ease-in-out;
     background-color: #fff;
   }
 
@@ -447,12 +480,12 @@ img {
 
   .burger._active::before {
     top: 50%;
-    transform: rotate(-45deg) translate(0, -50%);
+    transform: translate(0, -50%) rotate(-45deg);
   }
 
   .burger._active::after {
     bottom: 50%;
-    transform: rotate(45deg) translate(0, 50%);
+    transform: translate(0, 50%) rotate(45deg);
   }
 
   /* ------------  mobile menu ------------ */
@@ -461,8 +494,8 @@ img {
     position: fixed;
     display: block;
     z-index: 12;
-    top: 69px;
-    /* left: -100%; */
+    top: 64px;
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -470,6 +503,10 @@ img {
     transition: left 0.5s ease-in-out 0s;
     /* даёт скролить меню, если там много пунктов и не вмещаются в экран */
     overflow: auto;
+  }
+
+  .mobile-menu__container._active {
+    left: 0;
   }
 
   .mobile-menu__list {
@@ -490,32 +527,168 @@ img {
     font-size: 25px;
     color: var(--title-gray);
     cursor: pointer;
+    transition: color 0.2s ease-in-out;
   }
 
   .sub-menu-link {
     color: var(--blue-light);
   }
 
+  .sub-menu-link:active {
+    color: var(--red-main);
+    filter: drop-shadow(0 0 15px var(--red-main));
+  }
+
+  .mob-menu-link:active {
+    color: var(--blue-light);
+    filter: drop-shadow(0 0 15px var(--blue-light));
+  }
+
   .mob-sub-menu__list {
     display: none;
   }
 
-  .mob-item-type:active .mob-sub-menu__list {
+  .mob-item-type {
+    position: relative;
+  }
+
+  .mob-item-type._active .mob-sub-menu__list {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding: 10px 0 8px 30px;
   } 
 
+  .mob-item-type._active .mob-menu-link {
+    color: var(--blue-light);
+  }
+
   .menu__arrow {
+    position: absolute;
+    top: 11px;
+    left: 200px;
     display: block;
     width: 0;
     height: 0;
     margin: 0 0 0 5px;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 14px solid #fff;
-    transition: transform 0.5s ease-in-out;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #fff;
+    transition: transform 0.2s ease-in-out, border 0.2s ease-in-out;
+  }
+
+  .menu__arrow._active {
+    transform: rotate(180deg);
+    border-top: 12px solid var(--red-main);
   }
   
+  /* -------------- slider --------------- */
+
+  .slider__wrapper {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    height: 80vh;
+    top: 63px;
+    padding: 10% 0 10% 0
+  }
+
+  .block-swiper {
+    margin: 0 auto;
+    max-width: 100%;
+    /* background-color: transparent; */
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 83vh;
+  }
+
+  .picture-container {
+    text-align: center;
+  }
+
+  .picture-container img {
+    width: 100vw;
+    /* height: auto; */
+  }
+
+  .swiper-pagination {
+    color: var(--title-gray);
+    font-size: 3vw;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 96%;
+    margin-left: 4vw;
+    margin-right: 4vw;
+
+  }
+
+  /* ---------- mobile footer ------------  */
+
+  .footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 67vw;
+    bottom: -67vw;
+    left: 0;
+    z-index: 5;
+    padding: 6vw 0 6vw 0;
+    background-color: black;
+  }
+
+  .footer .footer-contacts {
+    font-size: 6vw;
+    color: var(--blue-light);
+  }
+
+  .footer .footer-contacts:active {
+    color: var(--red-main);
+  }
+
+  .footer-phones {
+    display: flex;
+  }
+
+  .footer-phones .menu-phone {
+    width: 10vw;
+  }
+
+  .social__block {
+    position: relative;
+    height: 14vw;
+    align-items: unset;
+  }
+
+
+  .footer__block-phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
+  }
+
+  .footer__block-phones .menu-link {
+    color: var(--title-gray);
+    font-size: 6.5vw;
+    line-height: 0;
+  }
+
+  .footer__block-phones .menu-link:not(:last-child) {
+    margin-bottom: 10vw;
+  }
+
+  .social__block .menu-link {
+    width: 15vw;
+  }
+
+  .social__block .menu-link:not(:last-child) {
+    margin-right: 10vw;
+  }
 
 }

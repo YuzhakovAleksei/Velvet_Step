@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
   <title>Бархатный шаг</title>
@@ -114,12 +115,6 @@
 						<span>и комплектующие</span>
 					</div>
 				</div>
-        <div class="columns">
-          <div class="blue-column"></div>
-          <div class="red-column">
-            <span class="column-text">МЫ ДЕЛАЕМ ЛЕСТНИЦЫ!</span>
-          </div>
-        </div>
       </div>
       <div class="column-block">
         <div class="blue-block"></div>
@@ -127,8 +122,94 @@
           <span>МЫ ДЕЛАЕМ ЛЕСТНИЦЫ!</span>
         </div>
       </div>
+      <div class="slider__wrapper">
+        <!-- <h1>Слайдер Swiper</h1> -->
+        <div class="pagination-place"></div>
+        <div class="image-slider swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/GrayFrame.png" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_2.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_3.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_4.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_5.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_6.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_7.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_8.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_9.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_10.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_11.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/Main_gallery/Gallery_x3_12.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
       <footer class="footer">
-        <a href="" class="menu-link">контакты</a>
+        <a href="" class="menu-link footer-contacts">контакты</a>
+        <div class="footer-phones">
+          <img src="img/Phone.svg" alt="" class="menu-phone">
+          <div class="footer__block-phones">
+            <a href="tel:+74862780178" class="menu-link">78 01 78</a>
+            <a href="tel:+79103009911" class="menu-link">+7 910 300 99 11</a>
+          </div>
+        </div>
         <div class="social__block">
           <a href="https://vk.com/barhat_shag" class="menu-link">
             <img src="img/vk.png" alt="" class="social__icon">
@@ -146,6 +227,7 @@
       </div>
     </div>
   </section>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
