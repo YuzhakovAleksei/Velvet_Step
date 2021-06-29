@@ -302,6 +302,11 @@ img {
   font-size: 4.42vw;
 }
 
+.block__type-img {
+  margin: 5vw auto;
+  width: 80vw;
+}
+
 .block__name {
   width: 62vw;
   margin-top: 1.5vw;
@@ -768,6 +773,10 @@ img {
     font-size: 4.65vw;
   }
 
+  .types__block {
+    margin: 11vw auto;
+  }
+
   .description-text {
     font-size: 5vw;
     line-height: 6.5vw;
@@ -786,6 +795,11 @@ img {
 
   .left-blue-block {
     display: none;
+  }
+
+  .block__type-img {
+    margin: 1vw auto;
+    width: 80vw;
   }
 
   /* -------------- Main mobile slider --------------- */

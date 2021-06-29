@@ -270,14 +270,14 @@ if (burger){
     },
 
     // управление колесом мыши
-    mousewheel: {
+    // mousewheel: {
 
-      //чувствительность
-      sensitivity: 1,
+    //   //чувствительность
+    //   sensitivity: 1,
 
-      // класс обьекта на котором будет срабатывать прокрутка мышью
-      eventsTarget: ".pages__image-slider"
-    },
+    //   // класс обьекта на котором будет срабатывать прокрутка мышью
+    //   eventsTarget: ".pages__image-slider"
+    // },
 
     // слайдер будет подстраиваться по высоту слайда true
     autoHeight: true,
