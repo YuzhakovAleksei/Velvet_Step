@@ -153,6 +153,7 @@ img {
   position: absolute;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   top: 2.2vw;
   width: 100%;
   padding: 0 6.2vw 0 8.2vw;
@@ -307,6 +308,10 @@ img {
   width: 80vw;
 }
 
+.patent-img {
+  width: 256px;
+}
+
 .block__name {
   width: 62vw;
   margin-top: 1.5vw;
@@ -354,6 +359,11 @@ img {
   text-indent: 6vw;
 }
 
+.description-text_bold {
+  font-weight: 700;
+  color: var(--blue-light);
+}
+
 .text__link {
   color: var(--blue-light);
 }
@@ -368,6 +378,20 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.22vw;
   color: var(--blue-elements);
+}
+
+.block__map {
+  padding: 5vw 0;
+}
+
+.advantages__list .description-text {
+  text-indent: 0;
+  text-align: left;
+}
+
+.block__map .description-text {
+  text-indent: 0;
+  text-align: center;
 }
 
 .background__wrapper {
