@@ -117,8 +117,9 @@
         </div>
         <div class="types__block">
           <h2 class="block__name">ПРИХОДИТЕ В НАШ ВЫСТАВОЧНЫЙ ЗАЛ</h2>
+          <p class="description-text_bold">г.Орел,  ул. Городская, 62 ПН-ПТ с 9:00 до 17:00</p>
           <div class="block__map">
-            <div id="uavMap1" style="width: 460px; height: 460px"></div>
+            <div id="VS_lock" style="width: 100%; height: 460px"></div>
 
             <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
             <script type="text/javascript">
@@ -127,15 +128,15 @@
               ymaps.ready(init);
               function init(){
                   // Создание карты.
-                  var myMap = new ymaps.Map("uavMap1", {
+                  var myMap = new ymaps.Map("VS_lock", {
                     // Координаты центра карты.
                     // Порядок по умолчанию: «широта, долгота».
                     // Чтобы не определять координаты центра карты вручную,
                     // воспользуйтесь инструментом Определение координат.
-                    center: [48.872185073737896,2.3542149999999555],
+                    center: [52.942872, 36.072587],
                     // Уровень масштабирования. Допустимые значения:
                     // от 0 (весь мир) до 19.
-                    zoom: 18
+                    zoom: 17
                   });
 
                   // var myGeoObject = new ymaps.GeoObject({
@@ -145,11 +146,11 @@
                   //   }
                   // });
 
-                  var myPlacemark = new ymaps.Placemark([48.872185073737896,2.3542149999999555], {}, {
+                  var myPlacemark = new ymaps.Placemark([52.942872, 36.072587], {}, {
                       iconLayout: 'default#image',
-                      iconImageHref: 'img/Subtract.svg',
-                      iconImageSize: [30, 42],
-                      iconImageOffset: [-30, -42]
+                      iconImageHref: '../img/VS_Lockate.svg',
+                      iconImageSize: [50, 62],
+                      iconImageOffset: [-30, -62]
                   });
 
                   // myMap.geoObjects.add(myGeoObject);
@@ -157,7 +158,7 @@
               }
             </script>
           </div>
-          <p class="description-text">г.Орел,  ул. Городская, 62 ПН-ПТ с 9:00 до 17:00</p>
+
         </div>
 
         <div class="left-blue-block"></div>
