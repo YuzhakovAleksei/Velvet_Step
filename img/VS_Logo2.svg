@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="294.71994"
-   height="296"
-   viewBox="0 0 77.977982 78.316666"
+   width="294.80316"
+   height="294.80316"
+   viewBox="0 0 78.000001 78.000003"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (ce6663b3b7, 2021-05-25)"
@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2"
-     inkscape:cx="126.48293"
-     inkscape:cy="138.49438"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="71.417785"
+     inkscape:cy="198.69701"
      inkscape:window-width="1848"
      inkscape:window-height="1016"
      inkscape:window-x="72"
@@ -42,35 +42,35 @@
      fit-margin-bottom="0"
      units="px">
     <sodipodi:guide
-       position="36.000473,43.618622"
+       position="36.000473,43.301959"
        orientation="0,-1"
        id="guide7669" />
     <sodipodi:guide
-       position="41.803793,39.339872"
+       position="41.803793,39.023209"
        orientation="0,-1"
        id="guide7671" />
     <sodipodi:guide
-       position="33.189331,24.638003"
+       position="33.189331,24.32134"
        orientation="0,-1"
        id="guide7673" />
     <sodipodi:guide
-       position="35.459653,20.364543"
+       position="35.459653,20.04788"
        orientation="0,-1"
        id="guide7675" />
     <sodipodi:guide
-       position="24.874649,38.665352"
+       position="24.874649,38.348689"
        orientation="0,-1"
        id="guide8133" />
     <sodipodi:guide
-       position="31.022507,41.770662"
+       position="31.022507,41.453999"
        orientation="1,0"
        id="guide8554" />
     <sodipodi:guide
-       position="45.713103,31.119393"
+       position="45.713103,30.80273"
        orientation="0,-1"
        id="guide10116" />
     <sodipodi:guide
-       position="65.016462,54.374722"
+       position="65.016462,54.058059"
        orientation="0,-1"
        id="guide14615" />
   </sodipodi:namedview>
@@ -96,7 +96,8 @@
        y1="70.348167"
        x2="103.40372"
        y2="148.6451"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0002823,0,0,0.99595665,-0.01836281,0.28457033)" />
     <filter
        style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
@@ -176,8 +177,8 @@
      inkscape:label="Logo"
      transform="translate(-65.038826,-70.379768)">
     <path
-       d="m 65.038826,70.379768 c 25.992664,0 51.985324,0 77.977984,0 0,26.105555 0,52.211102 0,78.316662 -25.99266,0 -51.98532,0 -77.977984,0 0,-26.10556 0,-52.211107 0,-78.316662 z"
-       style="display:inline;fill:url(#linearGradient2149);fill-opacity:1;stroke-width:0.0224014"
+       d="m 65.038826,70.379768 c 26.000003,0 52.000004,0 78.000004,0 0,26.000001 0,51.999992 0,78.000002 -26,0 -52.000001,0 -78.000004,0 0,-26.00001 0,-52.000001 0,-78.000002 z"
+       style="display:inline;fill:url(#linearGradient2149);fill-opacity:1;stroke-width:0.0223593"
        id="path2006"
        inkscape:label="5" />
     <path

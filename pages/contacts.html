@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//vk.com/js/api/openapi.js?87"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../img/VS_Logo_76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/VS_Logo_120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/VS_Logo_152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="../img/VS_Logo_167.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../img/VS_Logo_180.png">
+    <link rel="icon" sizes="192x192" href="../img/VS_Logo_192.png">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="../css/style.css">
     <title>Контакты</title>
@@ -89,24 +97,44 @@
 					<div class="logo__title pages__title">
 						<h1>КОНТАКТЫ</h1>
 					</div>
+          <span class="zero-content"></span>
 				</div>
-        <div class="types__block">
-          <!-- <h2 class="block__name">МОНОКОСОУР</h2> -->
-          <p class="description-text">
-            Компания по производству лестниц и ограждений "Бархатный ШАГ", была основана в 2013 году и на протяжении всего времени, мы произвели и установили более 500 лестничных каркасов. Получая такой колоссальный опыт в производстве лестниц, мы продолжаем совершенствоваться и осваивать новые технологии, тем самым повышая точность при производстве лестниц.
-          </p>
-          <p class="description-text">
-            Лестница, это геометрически точный конструктив, где каждый миллиметр играет роль, что очень важно. Наша компания производит лестничные марши из металла любых конфигураций, всегда учитывая, как пожелания заказчика, так и особенности помещения.
-          </p>
-          <p class="description-text">
-            Так же мы можем обшить как металлический каркас, так бетонный марш, деревянными ступенями и в последствии оборудовать ограждением, различных конфигураций.
-          </p>
-          <p class="description-text">
-            Дополнительно у нас можно заказать и деревянную лестницу. В этом нам помогают наши партнёры. Клиенту не придётся искать разных производителей тех или иных комплектующих, обратитесь в нашу компанию, мы всегда поможем решить любой вопрос касаемо лестниц.
-          </p>
+        <div class="social__group">
+          <h2 class="block__name">НАША ГРУППА ВКОНТАКТЕ</h2>
+          <div id="jlvkgroup58474787" style="width: 300px; height: 254.986px; background: url(&quot;https://vk.com/images/upload.gif&quot;) center center no-repeat transparent;">
+            <iframe name="fXD86663" frameborder="0" src="https://vk.com/widget_community.php?app=0&amp;width=300px&amp;_ver=1&amp;gid=58474787&amp;mode=0&amp;color1=FFFFFF&amp;color2=2B587A&amp;color3=DA251D&amp;class_name=&amp;height=255&amp;url=http%3A%2F%2Fxn----7sbabbq3b5azv5a5byb.xn--p1ai%2F&amp;referrer=&amp;title=%C2%AB%D0%91%D0%B0%D1%80%D1%85%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D0%A8%D0%90%D0%93%C2%BB%20%3A%20%D0%B8%D0%B7%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%B5%D1%81%D1%82%D0%BD%D0%B8%D1%86%20%D0%BD%D0%B0%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81%D0%B5%2C%20%D0%BE%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B9%20%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83...&amp;17a626723ec" width="300" height="255" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 254.986px;"></iframe>
+          </div>
+          <script type="text/javascript">
+            VK.Widgets.Group("jlvkgroup58474787", {mode: 0, wide: 0, width: "300", height: "255", color1: 'FFFFFF', color2: '2B587A', color3: 'DA251D'}, 58474787);
+          </script>
+        </div>
+        <div id="exhibition-room" class="types__block">
+          <h2 class="block__name">НАШ ВЫСТАВОЧНЫЙ ЗАЛ</h2>
+          <p class="description-text_bold">г.Орел,  ул. Городская, 62 <br> ПН-ПТ с 9:00 до 17:00</p>
+          <div class="block__map">
+            <div id="VS_lock" style="width: 100%; height: 460px"></div>
 
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+            <script type="text/javascript">
+              ymaps.ready(init);
+              function init(){
+                  var myMap = new ymaps.Map("VS_lock", {
+                    center: [52.942872, 36.072587],
+                    zoom: 17
+                  });
+                  var myPlacemark = new ymaps.Placemark([52.942872, 36.072587], {}, {
+                      iconLayout: 'default#image',
+                      iconImageHref: '../img/VS_Lockate.svg',
+                      iconImageSize: [50, 62],
+                      iconImageOffset: [-30, -62]
+                  });
+                  myMap.geoObjects.add(myPlacemark);
+              }
+            </script>
+          </div>
         </div>
 
+        <a href="mailto:barhat-shag@yandex.ru?subject=Вопрос по HTML" class="description-text">e-mail: barhat-shag@yandex.ru</a>
 
         <div class="left-blue-block"></div>
         <div class="column-block">

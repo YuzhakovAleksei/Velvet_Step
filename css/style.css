@@ -265,23 +265,24 @@ img {
 
 .pages__heading {
   position: relative;
-  /* width: 50vw; */
+  width: 100%;
 	padding-top: 12vw;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
+}
+
+.zero-content:after {
+  content: '';
+  height: 100%;
 }
 
 .logo__title {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 3vw;
 }
 
-.pages__title {
-	padding-left: 18.5vw;
-}
 
 .logo__link{
   width: 8.5vw;
@@ -362,6 +363,8 @@ img {
 
 .description-text_bold {
   font-weight: 700;
+  font-size: 2vw;
+  line-height: 38px;
   color: var(--blue-light);
 }
 
@@ -379,6 +382,16 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.22vw;
   color: var(--blue-elements);
+}
+
+.social__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social__group .block__name {
+  margin: 3vw auto 9vw auto;
 }
 
 .block__map {
@@ -808,6 +821,7 @@ img {
   }
 
   .block__name {
+    line-height: 7vw;
     font-size: 4.65vw;
   }
 
@@ -821,6 +835,12 @@ img {
     text-indent: 8vw;
   }
 
+  .description-text_bold {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 26px;
+    color: var(--blue-light);
+  }
 
   .advantages__list {
       width: 88vw;
