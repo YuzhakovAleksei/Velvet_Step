@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="76x76" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="">
+    <link rel="icon" sizes="192x192" href=""> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="../css/style.css">
     <title>Наши работы</title>
@@ -147,44 +153,7 @@
         <div class="block__map">
           <h2 class="block__name">КАРТА ВЫПОЛНЕННЫХ РАБОТ</h2>
           <p class="description-text">Карта некоторых выполненных заказов, связанных с изготовлением лестниц</p>
-          <div id="VS_works" style="width: 100%; height: 460px"></div>
-
-          <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-          <script type="text/javascript">
-            // Функция ymaps.ready() будет вызвана, когда
-            // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-            ymaps.ready(init);
-            function init(){
-                // Создание карты.
-                var myMap = new ymaps.Map("VS_works", {
-                  // Координаты центра карты.
-                  // Порядок по умолчанию: «широта, долгота».
-                  // Чтобы не определять координаты центра карты вручную,
-                  // воспользуйтесь инструментом Определение координат.
-                  center: [52.970756, 36.064358],
-                  // Уровень масштабирования. Допустимые значения:
-                  // от 0 (весь мир) до 19.
-                  zoom: 13
-                });
-
-                // var myGeoObject = new ymaps.GeoObject({
-                //   geometry: {
-                //       type: "Point", // тип геометрии - точка
-                //       coordinates: [48.872185073737896,2.3542149999999555] // координаты точки
-                //   }
-                // });
-
-                var myPlacemark = new ymaps.Placemark([52.970756, 36.064358], {}, {
-                    iconLayout: 'default#image',
-                    iconImageHref: 'img/Subtract.svg',
-                    iconImageSize: [30, 42],
-                    iconImageOffset: [-30, -42]
-                });
-
-                // myMap.geoObjects.add(myGeoObject);
-                myMap.geoObjects.add(myPlacemark);
-            }
-          </script>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A108e8d2bc4ad85b5680d65978fa48ff585bf3e341a7956a433830deef8e3a1ed&amp;width=100%25&amp;height=453&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
 
         <div class="left-blue-block"></div>
