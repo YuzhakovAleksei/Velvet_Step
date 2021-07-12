@@ -115,7 +115,7 @@ if (burger){
     autoHeight: true,
 
     // показ количества слайдов за раз, можно указывать дробные числа.
-    // slidesPerView: 1,
+    // slidesPerView: 0.2,
 
     // расстояние между слайдами
     spaceBetween: 5,
