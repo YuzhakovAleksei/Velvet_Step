@@ -646,6 +646,10 @@ img {
     width: 36vw;
   }
 
+  .logo__block .logo__title {
+    padding-left: 0;
+  }
+
   .logo__title {
     padding-left: 0;
     padding-top: 3vw;
