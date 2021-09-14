@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Компания по производству лестниц и ограждений Бархатный ШАГ, была основана в 2013 году и на протяжении всего времени, мы произвели и установили более 500 лестничных каркасов. Получая такой колоссальный опыт в производстве лестниц, мы продолжаем совершенствоваться и осваивать новые технологии, тем самым повышая точность при производстве лестниц.">
+    <meta name="Keywords" content="адрес, телефон, выставочный зал, о нас, о компании">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../img/VS_Logo_76.png">
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/VS_Logo_120.png">
@@ -17,7 +19,8 @@
     <title>О нас</title>
 </head>
 <body>
-  <section>
+  <section itemscope itemtype="http://schema.org/LocalBusiness">
+    <meta itemprop="name" content="Бархатный шаг">
 		<div class="pages__wrapper">
 			<header class="header">
 				<!-------------- desktop menu ---------------->
@@ -31,7 +34,7 @@
 					</li>
           <li class="menu__item menu__item-with-img">
             <img src="../img/Phone.svg" alt="" class="menu-phone">
-            <a href="tel:+74862780178" class="menu-link menu-phone">78 01 78</a>
+            <a itemprop="telephone" href="tel:+74862780178" class="menu-link menu-phone">78 01 78</a>
             <a href="tel:+79103009911" class="menu-link menu-phone">+7 910 300 99 11</a>
           </li>
 				</ul>
@@ -91,7 +94,7 @@
 			<div class="pages_container">
 				<div class="pages__heading">
 					<a href="" class="logo__link">
-						<img src="../img/VS_Logo2.svg" alt="">
+						<img itemprop="image" src="../img/VS_Logo2.svg" alt="">
 					</a>
 					<div class="logo__title pages__title">
 						<h1>О НАС</h1>
@@ -123,9 +126,9 @@
             <br> СТУПЕНИ лестничные, всех пород древесины. <br>
           </p>
         </div>
-        <div id="exhibition-room" class="types__block">
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"   id="exhibition-room" class="types__block">
           <h2 class="block__name">ПРИХОДИТЕ В НАШ ВЫСТАВОЧНЫЙ ЗАЛ</h2>
-          <p class="description-text_bold">г.Орел,  ул. Городская, 62 <br> ПН-ПТ с 9:00 до 17:00</p>
+          <p itemprop="streetAddress" class="description-text_bold">г.Орел,  ул. Городская, 62 <br> ПН-ПТ с 9:00 до 17:00</p>
           <div class="block__map">
             <div id="VS_lock" style="width: 100%; height: 460px"></div>
 

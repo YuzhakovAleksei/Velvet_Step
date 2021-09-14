@@ -88,18 +88,23 @@
         </div>
 
 			</header>
-			<div class="pages_container">
+			<div itemscope itemtype="http://schema.org/Product" class="pages_container">
+        <span itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+          <meta itemprop="name" content="Бархатный шаг"></span>
+        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          <meta itemprop="price" content="Договорная">
+          <meta itemprop="priceCurrency" content="RUB"></span>
 				<div class="pages__heading">
 					<a href="" class="logo__link">
 						<img src="../img/VS_Logo2.svg" alt="">
 					</a>
 					<div class="logo__title pages__title">
-						<h1>МОНОКОСОУР</h1>
+						<h1 itemprop="name">МОНОКОСОУР</h1>
 					</div>
           <span class="zero-content"></span>
 				</div>
         <div class="block__type-img">
-          <img src="../img/monocosour_solid_Red.png" alt="">
+          <img itemprop="image" src="../img/monocosour_solid_Red.png" alt="">
         </div>
         <div class="types__block">
           <!-- <h2 class="block__name">МОНОКОСОУР</h2> -->
@@ -108,7 +113,7 @@
             Наши лестницы на монокосоуре являются премиальным продуктом, особенность которого состоит в комбинации прочнейшего, эстетичного монокосоура и новых систем ограждений.
 
           </p>
-          <p class="description-text">
+          <p itemprop="description" class="description-text">
             Каркас лестниц на монокосоуре представляет собой единую систему из основной, несущей части и подступенков, которые соединены с монолитной балкой каркаса.
             Для придания большей эстетичности и элегантности продукции, места соединения подступенков и каркаса мы сделали визуально бесшовными.
           </p>
@@ -180,6 +185,7 @@
         </div>
       </footer>
 		</div>
+
 	</section>
   <script src="../js/swiper-bundle.min.js"></script>
   <script src="../js/script.js"></script>
