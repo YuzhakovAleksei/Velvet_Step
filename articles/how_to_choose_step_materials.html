@@ -16,26 +16,25 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="../css/style.css">
-    <title>О нас</title>
+    <title>Статья Бархатный шаг</title>
 </head>
 <body>
-  <section itemscope itemtype="http://schema.org/LocalBusiness">
-    <meta itemprop="name" content="Бархатный шаг">
-		<div class="pages__wrapper">
+  <section>
+    	<div class="articles__wrapper">
 			<header class="header">
 				<!-------------- desktop menu ---------------->
 
 				<ul class="menu__list pages-menu__list">
 					<li class="menu__item">
-						<a href="../index.html" class="menu-link link__to-main">
-							<img src="../img/Stair_Icon.svg" alt="" class="menu-phone">
-							<span class="menu-link">на главную</span>
+						<a href="../index.html" class="menu-link link__to-main articles__menu-link">
+							<img src="../img/Stair_Icon.svg" alt="" class="menu-phone article_menu-img">
+							<span class="menu-link articles__menu-link">на главную</span>
             </a>
 					</li>
           <li class="menu__item menu__item-with-img">
-            <img src="../img/Phone.svg" alt="" class="menu-phone">
-            <a itemprop="telephone" href="tel:+74862780178" class="menu-link menu-phone">78 01 78</a>
-            <a href="tel:+79103009911" class="menu-link menu-phone">+7 910 300 99 11</a>
+            <img src="../img/Phone.svg" alt="" class="menu-phone article_menu-img">
+            <a itemprop="telephone" href="tel:+74862780178" class="menu-link menu-phone articles__menu-link">78 01 78</a>
+            <a href="tel:+79103009911" class="menu-link menu-phone articles__menu-link">+7 910 300 99 11</a>
           </li>
 				</ul>
 
@@ -94,66 +93,29 @@
         </div>
 
 			</header>
-			<div class="pages_container">
+			<div class="articles__container">
 				<div class="pages__heading">
-					<a href="" class="logo__link">
+					<a href="../index.html" class="logo__link">
 						<img itemprop="image" src="../img/VS_Logo2.svg" alt="">
 					</a>
-					<div class="logo__title pages__title">
-						<h1>О НАС</h1>
-					</div>
-          <span class="zero-content"></span>
-				</div>
-        <div class="types__block">
-          <!-- <h2 class="block__name">МОНОКОСОУР</h2> -->
-          <p class="description-text">
-            Компания по производству лестниц и ограждений "Бархатный ШАГ", была основана в 2013 году и на протяжении всего времени, мы произвели и установили более 500 лестничных каркасов. Получая такой колоссальный опыт в производстве лестниц, мы продолжаем совершенствоваться и осваивать новые технологии, тем самым повышая точность при производстве лестниц.
-          </p>
-          <p class="description-text">
-            Лестница, это геометрически точный конструктив, где каждый миллиметр играет роль, что очень важно. Наша компания производит лестничные марши из металла любых конфигураций, всегда учитывая, как пожелания заказчика, так и особенности помещения.
-          </p>
-          <p class="description-text">
-            Так же мы можем обшить как металлический каркас, так бетонный марш, деревянными ступенями и в последствии оборудовать ограждением, различных конфигураций.
-          </p>
-          <p class="description-text">
-            Дополнительно у нас можно заказать и деревянную лестницу. В этом нам помогают наши партнёры. Клиенту не придётся искать разных производителей тех или иных комплектующих, обратитесь в нашу компанию, мы всегда поможем решить любой вопрос касаемо лестниц.
-          </p>
-          <p class="description-text">
-            <br> Компания, лестницы <br> "Бархатный ШАГ", <br> объединяет в себе ВСЕ, что касается любых лестниц!
-            <br> У нас можно получить консультацию, и заказать: <br>
-            <br> МОДУЛЬНУЮ лестницу, на металлокаркасе. <br>
-            <br> СВАРНУЮ лестницу, на металлокаркасе, различных видов косоуров. <br>
-            <br> ДЕРЕВЯННУЮ лестницу, любых пород древесины. <br>
-            <br> БЕТОННУЮ (заливную) лестницу, любой сложности. <br>
-            <br> А так же, как и всегда, у нас Вы можете приобрести и заказать: <br>
-            <br> СТУПЕНИ лестничные, всех пород древесины. <br>
-          </p>
-        </div>
-        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"   id="exhibition-room" class="types__block">
-          <h2 class="block__name">ПРИХОДИТЕ В НАШ ВЫСТАВОЧНЫЙ ЗАЛ</h2>
-          <p itemprop="streetAddress" class="description-text_bold">г.Орел,  ул. Городская, 62 <br> ПН-ПТ с 9:00 до 17:00</p>
-          <div class="block__map">
-            <div id="VS_lock" style="width: 100%; height: 460px"></div>
-
-            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-            <script type="text/javascript">
-              ymaps.ready(init);
-              function init(){
-                  var myMap = new ymaps.Map("VS_lock", {
-                    center: [52.942872, 36.072587],
-                    zoom: 17
-                  });
-                  var myPlacemark = new ymaps.Placemark([52.942872, 36.072587], {}, {
-                      iconLayout: 'default#image',
-                      iconImageHref: '../img/VS_Lockate.svg',
-                      iconImageSize: [50, 62],
-                      iconImageOffset: [-30, -62]
-                  });
-                  myMap.geoObjects.add(myPlacemark);
-              }
-            </script>
+          <div class="logo__title pages__title article_title">
+            <h1>МАТЕРИАЛЫ СТУПЕНЕЙ, КАК ВЫБРАТЬ, ЧЕМ ОТЛИЧАЮТСЯ?</h1>
           </div>
+          <span class="zero-content"></span>
+        </div>
+        <div class="article__content">
+          <!-- <div class="article_image">
+            <img src="../img/Articles/why_am_i_ banging_my_head.webp" alt="высота лестницы" class="article_image">
+          </div> -->
+          <p class="article-text">
+            Ступени используемые для обустройства лестничных маршей, различаются в основном породами древесины. Основные и часто используемые, это ступени из хвойных пород дерева, березы, лиственницы, ясеня, дуба. <br><br>
+            Ступени из хвойных пород дерева имеют невысокую стоимость и мягкость, что сказывается на эксплуатации (боятся ударов, царапин, механических воздействий). Лестницы выполненные целиком из хвойных пород дерева, подвержены скрипу, что не совсем приятно при эксплуатации. <br><br>
+            Ступени из берёзы, более твердые, но не имеют столь ярко выраженной структуры древесины. Хороший вариант в альтернативе к хвое, хоть и несколько дороже. <br><br>
+            Ступени из лиственницы, отличное предложение, но необходимо обратить внимание на качество изготовления данных ступеней или изделий из лиственницы, так как сушка этого дерева, должна быть в узких рамках температурных режимов. При нарушении данных параметров, дерево выходит не надлежащего качества. <br><br>
+            Ступени из ясеня и из дуба по прочности стоят очень близко друг к другу и выраженность структуры дерева, у них на одном высоком уровне, но стоимость изделий из ясеня несколько ниже, нежели из дуба. <br><br>
+            Эти породы древесины легко отличить друг от друга в неокрашенном виде, но после покраски, несведущий человек не найдёт отличии́, так как по структуре, они очень схожи.
 
+          </p>
         </div>
 
         <div class="left-blue-block"></div>
@@ -164,8 +126,10 @@
           </div>
         </div>
 			</div>
-      <footer id="footer" class="footer">
+      <footer id="footer" class="footer footer__article">
         <a href="../pages/contacts.html" class="menu-link footer-contacts">контакты</a>
+        <a href="../pages/all-about-stairs.html" class="menu-link footer-contacts">всё о лестницах</a>
+        <a href="../index.html" class="menu-link footer-contacts">на главную</a>
         <div class="footer-phones">
           <img src="../img/Phone.svg" alt="" class="menu-phone">
           <div class="footer__block-phones">
@@ -187,7 +151,7 @@
       </footer>
 		</div>
 	</section>
-  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- <script src="../js/swiper-bundle.min.js"></script> -->
   <script src="../js/script.js"></script>
    <!-- Yandex.Metrika counter -->
    <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42345339, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42345339" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

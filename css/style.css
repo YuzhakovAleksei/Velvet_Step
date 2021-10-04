@@ -6,6 +6,9 @@
   --blue-elements: #045D8A;
   --blue-light: #4F95FF;
   --red-main: #C7261C;
+  --article-header: #3f576d;
+  --article-text: #2f2f2f;
+  --article-menu-link: #1a1a1a;
   --swiper-theme-color: var(--blue-light);
 }
 /* roboto-slab-regular - latin_cyrillic */
@@ -182,11 +185,19 @@ img {
   margin-right: 1.3vw;
 }
 
+.article_menu-img {
+  filter: brightness(0);
+}
+
 .menu-link {
   cursor: pointer;
   color: var(--title-gray);
   font-size: 1.3vw;
   transition: color 0.3s ease-in-out, filter 0.3s ease-in-out ;
+}
+
+.articles__menu-link {
+  color: var(--article-menu-link);
 }
 
 .link__to-main {
@@ -443,12 +454,12 @@ img {
 	align-items: flex-end;
 	height: 100%;
 	width: 6.2vw;
-  z-index: 5;
+  z-index: 15;
 }
 
 .left-blue-block {
   position: absolute;
-  z-index: 5;
+  z-index: 15;
   height: 100%;
   width: 1.3vw;
   top: 0;
@@ -497,17 +508,93 @@ img {
   top: 24.3vw;
 }
 
+/* -----------  All about stairs -------------- */
+
+.articles__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.articles__container {
+  position: relative;
+	width: 100%;
+	padding: 0 6.2vw 3vw 8.2vw;
+	text-align: center;
+	background-color: aliceblue;
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0 2vw 0;
+}
+
+.articles-list__container {
+  padding: 10vw;
+}
+
+.articles__list {
+  text-indent: 0;
+  text-align: left;
+}
+
+.articles__list li {
+  padding-bottom: 2vw;
+}
+
+.article-link {
+  font-weight: 700;
+  font-size: 2vw;
+  text-transform: uppercase;
+  line-height: 38px;
+  color: var(--blue-light);
+}
+
+.article_title h1 {
+  color: var(--article-header);
+  line-height: 5vw;
+}
+
+.article-text {
+  color: var(--article-text);
+  font-size: 1.2vw;
+  text-align: left;
+  padding: 2vw 0 2vw 0;
+}
+
+.article_image {
+  width: 60vw;
+}
+
+
+.article-link:hover {
+  color: white;
+  filter: drop-shadow(0 0 15px var(--blue-light));
+}
+
+
 /* ------------- footer Desktop --------------- */
 
 .footer {
   position: absolute;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   bottom: 3vw;
   left: 0;
   z-index: 5;
   padding: 0 9.5vw 0 8.2vw;
+}
+
+.footer__article {
+  background-color: black;
+  bottom: 0;
+  padding: 1vw 9.5vw 1vw 8.2vw;
 }
 
 .pages__wrapper footer {
@@ -824,7 +911,7 @@ img {
   }
 
   .pages__title h1 {
-    line-height: 8vw;
+    line-height: 11vw;
     font-size: 9.42vw;
   }
 
@@ -935,7 +1022,37 @@ img {
     font-size: 3vw;
   }
 
+  /* ---  All about stairs mobile --------- */
 
+  .articles__list li {
+    padding-bottom: 6vw;
+  }
+
+  .article-link {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  .article-link:focus {
+    color: white;
+    filter: drop-shadow(0 0 15px white);
+  }
+
+  .article-link:active {
+    color: var(--red-main);
+    filter: drop-shadow(0 0 15px var(--red-main));
+  }
+
+  .article_image {
+    width: 100%;
+  }
+
+  /* --------- articles mobile -----------  */
+
+  .article-text {
+    text-align: left;
+    font-size: 4vw;
+  }
 
   /* ---------- mobile footer ------------  */
 
@@ -951,6 +1068,12 @@ img {
     z-index: 5;
     padding: 11vw 0 11vw 0;
     background-color: black;
+  }
+
+  .footer__article {
+    height: 92vw;
+    position: relative;
+    bottom: 0;
   }
 
   .pages__wrapper .footer {
